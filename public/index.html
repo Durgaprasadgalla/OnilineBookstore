@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: rgb(238, 238, 241);
+}
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.logo-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.cart-icon{
+    width:20px;
+    height: 20px;
+}
+.cart-logo{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 2%;
+}
+#nav-item1{
+    color:rgb(12, 12, 12);
+    font-weight: 400;
+    font-size:20px;
+}
+#nav-item2{
+    color: rgb(21, 21, 21);
+    font-weight: 400;
+    font-size:20px;
+}
+#nav-item3{
+    color: rgb(9, 9, 9);
+    font-weight: 400;
+    font-size:20px;
+}
+#nav-item4{
+    color: rgb(18, 18, 18);
+    font-weight: 400;
+    font-size:20px;
+}
+.bg-container{
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap:5%;
+}
+.container-img{
+    /* width: 70%; */
+    height:20%;
+}
+.main-heading{
+    color: rgb(21, 20, 20);
+    font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.buttons{
+    display: block;
+    width:150px;
+    padding: 10px;
+    background-color: rgb(60, 60, 235);
+    color: white;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.button-section{
+    display: flex;
+    gap: 10px;
+}
+.heading{
+    color: rgb(94, 89, 242);
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <img class="logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIS85040iLqAjmJts22r0vXg9RgtfCrxnWZJOMJFt5IqRPukEPtvjxvr699r2VcqaSWpA&usqp=CAU" alt="Logo">
+        <h3 class="main-heading">Book Store</h3>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link" id="nav-item1" href="#home">Home</a>
+            <a class="nav-link" id="nav-item2" href="#popular-books">Popular Books</a>
+            <a class="nav-link" id="nav-item3" href="#discover-books">Discover Books</a>
+            <!-- <img class="cart-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThpsQ82Z38IfrKbSO1vgaLNCpe2QoAXD8pSA&s" alt="Cart"> -->
+          </div>
+        </div>
+      </nav>
+    
+    <div class="bg-container" id="home">
+       <h1 class="heading">Welcome to Our Books Store</h1>
+       <p class="information">Welcome to Our Books Store
+        Welcome to our Book Store's online portal! Here, you can browse our extensive collection of books, manage your account, and stay updated on the latest Books. Whether you’re a lifelong reader or a new member,we have something for evevryone.
+      </p>
+      <!-- </div>
+     <img  class="container-img" src="https://akshatbookstore.netlify.app/static/media/scroll.c8c8de67503aa2a71a0e.gif">
+    </div> -->
+    <div class="button-section">
+        <form action="login.html">
+        <button class="buttons">Login</button>
+    </form>
+    <form action="signup.html">
+        <button class="buttons">Signup</button>
+    </form>
+    </div>
+    </div>
+</body>
+</html>
